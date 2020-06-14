@@ -5,7 +5,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 //Components
-import Layout from "./components/Layout";
 import Example from "./components/Exemple";
 import NymeHeader from "./layout/NymeHeader";
 import NymeFooter from "./layout/NymeFooter";
