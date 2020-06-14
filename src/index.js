@@ -1,14 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import Layout from "./components/Layout";
 import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import CssBaseline from "@material-ui/core/CssBaseline";
+
+//Components
+import Layout from "./components/Layout";
+import Example from "./components/Exemple";
+import NymeHeader from "./layout/NymeHeader";
+import NymeFooter from "./layout/NymeFooter";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Layout />
+    <CssBaseline />
+    <NymeHeader />
+    <main>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact>
+            <Example />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </main>
+    <NymeFooter />
   </React.StrictMode>,
   document.getElementById("root")
 );
