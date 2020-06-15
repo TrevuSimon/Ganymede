@@ -11,18 +11,18 @@ import NymeFooter from "./layout/NymeFooter";
 
 ReactDOM.render(
   <React.StrictMode>
-    <CssBaseline />
-    <NymeHeader />
-    <main>
-      <BrowserRouter>
+    <BrowserRouter>
+      <CssBaseline />
+      <NymeHeader />
+      <main>
         <Switch>
           <Route path="/" exact>
             <Example />
           </Route>
         </Switch>
-      </BrowserRouter>
-    </main>
-    <NymeFooter />
+      </main>
+      <NymeFooter />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
