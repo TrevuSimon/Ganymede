@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
-import LinkMui from "@material-ui/core/Link";
 import Classes from "./NymeStyle";
 
 function NymeFooter(props) {
