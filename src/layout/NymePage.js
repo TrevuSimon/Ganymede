@@ -3,7 +3,7 @@ import NymeContainer from "./NymeContainer";
 
 function NymePage(props) {
   useEffect(() => {
-    document.title = `${props.title}`;
+    document.title = props.title ?? "Nyme";
 
     if (props.scroll !== null && props.scroll !== undefined && props.scroll === true) {
       window.scrollTo(0, 0);

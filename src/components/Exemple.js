@@ -13,7 +13,7 @@ import Classes from "./../layout/NymeStyle";
 import NymePage from "./../layout/NymePage";
 
 function Example() {
-  const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const cards = [1, 2, 3, 4, 5, 6];
 
   console.log(Classes());
 
@@ -22,10 +22,14 @@ function Example() {
       <div className={Classes().heroContent}>
         <Container maxWidth="sm">
           <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-            Album layout
+            Ganymedes Project
           </Typography>
           <Typography variant="h5" align="center" color="textSecondary" paragraph>
-            Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don&apos;t simply skip over it entirely.
+            <p>
+              Distance from Jupiter: Ganymede is the seventh moon and third Galilean satellite outward from Jupiter, orbiting at
+              about 1.070 million kilometers.
+            </p>{" "}
+            <p>It takes Ganymede about seven Earth-days to orbit Jupiter.</p>
           </Typography>
           <div className={Classes().heroButtons}>
             <Grid container spacing={2} justify="center">
@@ -50,6 +54,7 @@ function Example() {
             {cards.map(card => (
               <Grid item key={card} xs={12} sm={6} md={4}>
                 <Card className={Classes().card}>
+                  "
                   <CardMedia className={Classes().cardMedia} image="https://source.unsplash.com/random" title="Image title" />
                   <CardContent className={Classes().cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
