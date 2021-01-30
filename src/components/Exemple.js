@@ -54,11 +54,10 @@ function Example() {
             {cards.map(card => (
               <Grid item key={card} xs={12} sm={6} md={4}>
                 <Card className={Classes().card}>
-                  "
                   <CardMedia className={Classes().cardMedia} image="https://source.unsplash.com/random" title="Image title" />
                   <CardContent className={Classes().cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      Photos
                     </Typography>
                     <Typography>This is a media card. You can use this section to describe the content.</Typography>
                   </CardContent>
