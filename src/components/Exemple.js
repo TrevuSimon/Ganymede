@@ -26,8 +26,7 @@ function Example() {
           </Typography>
           <Typography variant="h5" align="center" color="textSecondary" paragraph>
             <p>
-              Distance from Jupiter: Ganymede is the seventh moon and third Galilean satellite outward from Jupiter, orbiting at
-              about 1.070 million kilometers.
+              Two esse aqui não tem nada demais mas é de graça! =]
             </p>{" "}
             <p>It takes Ganymede about seven Earth-days to orbit Jupiter.</p>
           </Typography>
